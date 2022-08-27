@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Message } from "./Message";
 
 export const SimpleForm = () => {
 
@@ -47,6 +48,8 @@ export const SimpleForm = () => {
         value={username}
         onChange={ onInputChange } 
         />
+
+        {(username == "strite2") && < Message />}
 
         <input 
         type="email" 
